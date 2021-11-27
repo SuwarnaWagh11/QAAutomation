@@ -13,6 +13,5 @@ public class TestCase2 extends Helper{
 	public void Testcase_Google3() {
 		test = extent.createTest("Testcase_Google3", "Sample test passed to generate report");
 		Assert.assertEquals("abcd", "abcd");
-		test.log(Status.INFO, "Passed test");
 	}
 }
