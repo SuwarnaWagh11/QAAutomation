@@ -10,29 +10,13 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 
 public class BrowserFactory {
-
-	public static WebDriver driver;
 	 
 	public BrowserFactory(){
 	 
 	}
 	 
-	public static WebDriver getDriver() {
-		if (driver == null) {
-			ChromeOptions options = new ChromeOptions();
-			options.addArguments("--disable-notifications");
-			options.setPageLoadStrategy(PageLoadStrategy.NONE);
-			System.setProperty("webdriver.chrome.driver", "C:\\selenium\\chromedriver.exe");
-			driver = new ChromeDriver(options);
-			driver.manage().window().maximize();
-			driver.manage().deleteAllCookies();
-			driver.manage().timeouts().implicitlyWait(45, TimeUnit.SECONDS);
-			driver.manage().timeouts().pageLoadTimeout(45, TimeUnit.SECONDS);
-		}
-		return driver;
-	}
-	 
-	public static WebDriver getDriver(String browserName){
+	public WebDriver getDriver(String browserName){
+		WebDriver driver = null;
 		if (driver == null) {
 			if (browserName.equalsIgnoreCase("firefox")) {
 				System.setProperty("webdriver.gecko.driver", "D:Softwaresjarsgeckodriver-v0.23.0-win64geckodriver.exe");
@@ -43,8 +27,11 @@ public class BrowserFactory {
 				driver.manage().timeouts().pageLoadTimeout(45, TimeUnit.SECONDS);
 			} else if (browserName.equalsIgnoreCase("chrome")) {
 				System.out.println("in chrome");
+				ChromeOptions options = new ChromeOptions();
+				options.addArguments("--disable-notifications");
+				options.setPageLoadStrategy(PageLoadStrategy.NONE);
 				System.setProperty("webdriver.chrome.driver", "C:\\selenium\\chromedriver.exe");
-				driver = new ChromeDriver();
+				driver = new ChromeDriver(options);
 				driver.manage().window().maximize();
 				driver.manage().deleteAllCookies();
 				driver.manage().timeouts().implicitlyWait(45, TimeUnit.SECONDS);

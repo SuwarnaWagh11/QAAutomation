@@ -3,17 +3,17 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.automation.testcases.ui.TestCase1">
+      <class name="com.automation.testcases.ui.TestCaseClass">
         <methods>
           <include name="afterSuite"/>
+          <include name="returnTicket"/>
           <include name="getResult"/>
           <include name="beforeSuite"/>
-          <include name="beforeMethodClass"/>
           <include name="afterClass"/>
-          <include name="Testcase_Google2"/>
           <include name="beforeClass"/>
+          <include name="beforeMethodClass"/>
         </methods>
-      </class> <!-- com.automation.testcases.ui.TestCase1 -->
+      </class> <!-- com.automation.testcases.ui.TestCaseClass -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

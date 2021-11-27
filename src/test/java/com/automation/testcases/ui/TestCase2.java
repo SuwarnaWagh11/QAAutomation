@@ -1,5 +1,7 @@
 package com.automation.testcases.ui;
 
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -9,9 +11,9 @@ import com.aventstack.extentreports.Status;
 public class TestCase2 extends Helper{
 //checking the test case
 	
-	@Test
+	//@Test
 	public void Testcase_Google3() {
 		test = extent.createTest("Testcase_Google3", "Sample test passed to generate report");
-		Assert.assertEquals("abcd", "abcd");
+		AssertJUnit.assertEquals("abcd", "abcd");
 	}
 }

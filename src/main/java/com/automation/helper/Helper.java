@@ -13,17 +13,20 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 
 import com.automation.base.BrowserFactory;
+import com.automation.base.DriverFactory;
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 
 public class Helper {
 
-	public static WebDriver driver;
+	//protected WebDriver driver;
 	public static ExtentHtmlReporter htmlReporter;
 	public static ExtentReports extent;
 	public static ExtentTest test;
-
+	
+	BrowserFactory browserFactory = new BrowserFactory();
+	
 	public Helper() {
 	}
 
@@ -40,15 +43,11 @@ public class Helper {
 	
 	}
 
-	@BeforeMethod
-	public void beforeMethodClass() {
-		System.out.println("in @BeforeMethod");
-		Helper.driver = BrowserFactory.getDriver("chrome");
-
-	}
+	
 
 	@AfterMethod
 	public void getResult(ITestResult result) {
+		
        if(result.getStatus() == ITestResult.FAILURE) {
     	   //test.log(result.getStatus(), "Failed TEST CASE Name is "+result.getName());
        }
@@ -61,7 +60,8 @@ public class Helper {
 
 	@AfterSuite
 	public void afterSuite() throws IOException, EmailException {
+		//DriverFactory.getInstance().closeBrowser();
 		extent.flush();
-		driver.quit();
+		
 	}
 }
