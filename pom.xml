@@ -29,7 +29,8 @@
 				<version>3.0.0-M4</version>
 				<configuration>
 					<suiteXmlFiles>
-						<suiteXmlFile>${xmlFiles}</suiteXmlFile>
+						<suiteXmlFile>regression.xml</suiteXmlFile>
+						<suiteXmlFile>src/test/resources/testng.xml</suiteXmlFile>
 					</suiteXmlFiles>
 				</configuration>
 			</plugin>
