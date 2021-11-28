@@ -1,77 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="4" total="6" passed="2">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite1" duration-ms="8678" started-at="2021-11-27T18:06:43 IST" finished-at="2021-11-27T18:06:52 IST">
+  <suite name="Default suite" duration-ms="1554" started-at="2021-11-28T18:32:20 IST" finished-at="2021-11-28T18:32:21 IST">
     <groups>
     </groups>
-    <test name="Test1" duration-ms="8678" started-at="2021-11-27T18:06:43 IST" finished-at="2021-11-27T18:06:52 IST">
-      <class name="com.automation.testcases.ui.TestCase1">
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.automation.testcases.ui.TestCase1@646d64ab]" name="beforeClass" is-config="true" duration-ms="0" started-at="2021-11-27T18:06:43 IST" finished-at="2021-11-27T18:06:43 IST">
+    <test name="Default test" duration-ms="1554" started-at="2021-11-28T18:32:20 IST" finished-at="2021-11-28T18:32:21 IST">
+      <class name="com.automation.webservices.test.GetData">
+        <test-method status="PASS" signature="testResponseCode()[pri:0, instance:com.automation.webservices.test.GetData@1786dec2]" name="testResponseCode" duration-ms="1516" started-at="2021-11-28T18:32:20 IST" finished-at="2021-11-28T18:32:21 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="beforeMethodClass()[pri:0, instance:com.automation.testcases.ui.TestCase1@646d64ab]" name="beforeMethodClass" is-config="true" duration-ms="5091" started-at="2021-11-27T18:06:43 IST" finished-at="2021-11-27T18:06:48 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethodClass -->
-        <test-method status="PASS" signature="Testcase_Google()[pri:0, instance:com.automation.testcases.ui.TestCase1@646d64ab]" name="Testcase_Google" duration-ms="3533" started-at="2021-11-27T18:06:48 IST" finished-at="2021-11-27T18:06:52 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Testcase_Google -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.automation.testcases.ui.TestCase1@646d64ab]" name="getResult" is-config="true" duration-ms="3" started-at="2021-11-27T18:06:52 IST" finished-at="2021-11-27T18:06:52 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=Testcase_Google status=SUCCESS method=TestCase1.Testcase_Google()[pri:0, instance:com.automation.testcases.ui.TestCase1@646d64ab] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.automation.testcases.ui.TestCase1@646d64ab]" name="afterClass" is-config="true" duration-ms="1" started-at="2021-11-27T18:06:52 IST" finished-at="2021-11-27T18:06:52 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-      </class> <!-- com.automation.testcases.ui.TestCase1 -->
-      <class name="com.automation.testcases.ui.TestCaseClass">
-        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:com.automation.testcases.ui.TestCaseClass@1b68ddbd]" name="beforeSuite" is-config="true" duration-ms="117" started-at="2021-11-27T18:06:43 IST" finished-at="2021-11-27T18:06:43 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeSuite -->
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.automation.testcases.ui.TestCaseClass@1b68ddbd]" name="beforeClass" is-config="true" duration-ms="0" started-at="2021-11-27T18:06:43 IST" finished-at="2021-11-27T18:06:43 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="beforeMethodClass()[pri:0, instance:com.automation.testcases.ui.TestCaseClass@1b68ddbd]" name="beforeMethodClass" is-config="true" duration-ms="4740" started-at="2021-11-27T18:06:43 IST" finished-at="2021-11-27T18:06:48 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethodClass -->
-        <test-method status="PASS" signature="returnTicket()[pri:0, instance:com.automation.testcases.ui.TestCaseClass@1b68ddbd]" name="returnTicket" duration-ms="3902" started-at="2021-11-27T18:06:48 IST" finished-at="2021-11-27T18:06:52 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- returnTicket -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.automation.testcases.ui.TestCaseClass@1b68ddbd]" name="getResult" is-config="true" duration-ms="0" started-at="2021-11-27T18:06:52 IST" finished-at="2021-11-27T18:06:52 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=returnTicket status=SUCCESS method=TestCaseClass.returnTicket()[pri:0, instance:com.automation.testcases.ui.TestCaseClass@1b68ddbd] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.automation.testcases.ui.TestCaseClass@1b68ddbd]" name="afterClass" is-config="true" duration-ms="0" started-at="2021-11-27T18:06:52 IST" finished-at="2021-11-27T18:06:52 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-        <test-method status="PASS" signature="afterSuite()[pri:0, instance:com.automation.testcases.ui.TestCaseClass@1b68ddbd]" name="afterSuite" is-config="true" duration-ms="325" started-at="2021-11-27T18:06:52 IST" finished-at="2021-11-27T18:06:52 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterSuite -->
-      </class> <!-- com.automation.testcases.ui.TestCaseClass -->
-    </test> <!-- Test1 -->
-  </suite> <!-- Suite1 -->
+        </test-method> <!-- testResponseCode -->
+      </class> <!-- com.automation.webservices.test.GetData -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
